@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		B9B2B8ED1F0F1EC000C91218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B8EC1F0F1EC000C91218 /* AppDelegate.swift */; };
-		B9B2B8EF1F0F1EC000C91218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B8EE1F0F1EC000C91218 /* ViewController.swift */; };
 		B9B2B8F21F0F1EC000C91218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B2B8F01F0F1EC000C91218 /* Main.storyboard */; };
 		B9B2B8F41F0F1EC000C91218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B2B8F31F0F1EC000C91218 /* Assets.xcassets */; };
 		B9B2B8F71F0F1EC000C91218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B2B8F51F0F1EC000C91218 /* LaunchScreen.storyboard */; };
+		B9B2B9021F11187200C91218 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B9011F11187200C91218 /* BeerTableViewCell.swift */; };
+		B9B2B9041F1118AA00C91218 /* BeerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B9031F1118AA00C91218 /* BeerTableViewController.swift */; };
+		B9B2B9071F1118F300C91218 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B9061F1118F300C91218 /* BeerViewController.swift */; };
+		B9B2B9091F11197D00C91218 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B9081F11197D00C91218 /* Beer.swift */; };
+		B9B2B90B1F111F9600C91218 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2B90A1F111F9600C91218 /* BeerAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9B2B8E91F0F1EC000C91218 /* PUNKBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUNKBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B2B8EC1F0F1EC000C91218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9B2B8EE1F0F1EC000C91218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9B2B8F11F0F1EC000C91218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9B2B8F31F0F1EC000C91218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9B2B8F61F0F1EC000C91218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9B2B8F81F0F1EC000C91218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B2B9011F11187200C91218 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		B9B2B9031F1118AA00C91218 /* BeerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerTableViewController.swift; sourceTree = "<group>"; };
+		B9B2B9061F1118F300C91218 /* BeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		B9B2B9081F11197D00C91218 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		B9B2B90A1F111F9600C91218 /* BeerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		B9B2B8EB1F0F1EC000C91218 /* PUNKBeers */ = {
 			isa = PBXGroup;
 			children = (
+				B9B2B90C1F111F9C00C91218 /* API */,
+				B9B2B9001F11185400C91218 /* Controller */,
+				B9B2B8FE1F11184400C91218 /* Model */,
+				B9B2B8FF1F11184E00C91218 /* View */,
+				B9B2B9051F1118CB00C91218 /* Storyboard */,
 				B9B2B8EC1F0F1EC000C91218 /* AppDelegate.swift */,
-				B9B2B8EE1F0F1EC000C91218 /* ViewController.swift */,
-				B9B2B8F01F0F1EC000C91218 /* Main.storyboard */,
 				B9B2B8F31F0F1EC000C91218 /* Assets.xcassets */,
-				B9B2B8F51F0F1EC000C91218 /* LaunchScreen.storyboard */,
 				B9B2B8F81F0F1EC000C91218 /* Info.plist */,
 			);
 			path = PUNKBeers;
+			sourceTree = "<group>";
+		};
+		B9B2B8FE1F11184400C91218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B9081F11197D00C91218 /* Beer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B9B2B8FF1F11184E00C91218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B9011F11187200C91218 /* BeerTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B9B2B9001F11185400C91218 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B9031F1118AA00C91218 /* BeerTableViewController.swift */,
+				B9B2B9061F1118F300C91218 /* BeerViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B9B2B9051F1118CB00C91218 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B8F01F0F1EC000C91218 /* Main.storyboard */,
+				B9B2B8F51F0F1EC000C91218 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		B9B2B90C1F111F9C00C91218 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2B90A1F111F9600C91218 /* BeerAPI.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9B2B8EF1F0F1EC000C91218 /* ViewController.swift in Sources */,
+				B9B2B9071F1118F300C91218 /* BeerViewController.swift in Sources */,
+				B9B2B9041F1118AA00C91218 /* BeerTableViewController.swift in Sources */,
+				B9B2B90B1F111F9600C91218 /* BeerAPI.swift in Sources */,
+				B9B2B9091F11197D00C91218 /* Beer.swift in Sources */,
+				B9B2B9021F11187200C91218 /* BeerTableViewCell.swift in Sources */,
 				B9B2B8ED1F0F1EC000C91218 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +358,7 @@
 				B9B2B8FD1F0F1EC000C91218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
