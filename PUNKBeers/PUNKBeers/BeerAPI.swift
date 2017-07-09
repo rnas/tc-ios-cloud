@@ -14,7 +14,7 @@ class BeerAPI: NSObject {
     
     func getBeersList(page : Int, success : @escaping ([Beer]) -> Void, error : @escaping (_ error : String) -> Void) -> Void {
     
-        let urlRequest = URL(string: "\(baseEndpoint)beers?beer_name=IPA")
+        let urlRequest = URL(string: "\(baseEndpoint)beers")
     
         URLSession.shared.dataTask(with: urlRequest!) { (data : Data?, response : URLResponse?, errors :Error?) in
             
